@@ -17,8 +17,7 @@ from gevent.pywsgi import WSGIServer
 
 import pytesseract
 from PIL import Image
-pytesseract.pytesseract.tesseract_cmd = ‘/app/.apt/usr/bin/tesseract’
-
+pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
 # Define a flask app
 app = Flask(__name__)
 
