@@ -10,14 +10,11 @@ from __future__ import division, print_function
 import sys
 import os
 import numpy as np
-from keras import backend as K
-from keras.models import load_model
-from keras.preprocessing import image
+
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
 
-import matplotlib.pyplot as plt
 import pytesseract
 from PIL import Image
 
