@@ -70,9 +70,8 @@ def upload():
         f = request.files['file']
 
         # Save the file to ./uploads
-        basepath = 'D:\FINAL-YEAR-PROJECT\CLOUD-DEPLOYMENT-FOOD'
-        file_path = os.path.join(
-            basepath, 'uploads', secure_filename(f.filename))
+   
+        file_path = os.path.join('uploads', secure_filename(f.filename))
         f.save(file_path)
 
         # Make prediction
