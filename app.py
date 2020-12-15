@@ -31,7 +31,7 @@ def model_predict(path):
     img = Image.open(path).convert("LA")
     pixels = img.getdata()
     newPixels = []
-    allergen = ["Spelt","Rye","Nuts","Barley","Oats","Milk","Eggs","Fish","Crustacean shellfish","Tree nuts","Peanuts","Wheat","Bass","Flounder","Clam","Crab","Shrimp","Lobster","Walnut","Pecan","Cocoa","Soy","Sesame","Corn","Palm Oil","Coconut Oil","Almonds","Mustard","Sunflower","Glucose","Honey","Quinoa","Rosemary","Celery","Yeast","Cereals","Pork","Chicken","Sulphites","Hazelnuts","Vanilla","Butter","Mixed Fruit","Seeds","Pistachios"] 
+    allergen = ["Spelt","Nuts","Barley","Oats","Milk","Eggs","Fish","Crustacean shellfish","Tree nuts","Peanuts","Wheat","Bass","Flounder","Clam","Crab","Shrimp","Lobster","Walnut","Pecan","Cocoa","Soy","Sesame","Corn","Palm Oil","Coconut Oil","Almonds","Mustard","Sunflower","Glucose","Honey","Quinoa","Rosemary","Celery","Yeast","Cereals","Pork","Chicken","Sulphites","Hazelnuts","Vanilla","Butter","Mixed Fruit","Seeds","Pistachios"] 
     for pixel in pixels:
         if pixel < threshold:
             newPixels.append(black)
